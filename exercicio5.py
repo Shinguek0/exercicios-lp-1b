@@ -7,4 +7,4 @@ if(inp.isnumeric()):
     print(inp, " é uma int!" '\n')
 
 if(inp.isalnum() and not(inp.isalpha()) and not(inp.isnumeric())):
-    print(inp, " tem int e String!")
+    print(inp, " tem int e String!!")
