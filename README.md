@@ -21,3 +21,8 @@ print("Exercicios de Logica da Programação: ")
 [14º exercicio](https://github.com/Shinguek0/exercicios-lp-1b/blob/main/exercicio14.py)<br>
 
 # Lista de exercicio:
+
+[1º exercicio](https://github.com/Shinguek0/exercicios-lp-1b/blob/main/exercicio1.1.py)<br>
+[2º exercicio](https://github.com/Shinguek0/exercicios-lp-1b/blob/main/exercicio1.2.py)<br>
+[3º exercicio](https://github.com/Shinguek0/exercicios-lp-1b/blob/main/exercicio1.3.py)<br>
+[4º exercicio](https://github.com/Shinguek0/exercicios-lp-1b/blob/main/exercicio1.4.py)<br>
