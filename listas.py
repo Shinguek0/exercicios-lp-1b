@@ -1,12 +1,44 @@
 #https://panda.ime.usp.br/pensepy/static/pensepy/09-Listas/listas.html
 # site explicandos uns bagui de lista
 
-#pesquisar pra que serve o pop
+#
 
 #criando listas
 nomeLista = []
 numLista = [1,2,3,4,10.5,14.5]
 commLista = []
+
+def sortedRevers():
+    listaSorted = [1,32,43,5,46,4]
+    print(sorted(listaSorted))
+    print(list(reversed(listaSorted)))
+    print(listaSorted)
+    listaSorted.reverse()
+    print(listaSorted)
+
+    numMin = min(listaSorted)       # menor numero da lista
+    numMax = max(listaSorted)       # maior numero da lista
+    somaTotal = sum(listaSorted)    # soma de todos os numeros da lista
+    print(somaTotal)
+
+    soma1 = min(listaSorted) + max(listaSorted)
+    soma2 = numMax + numMin
+    print(numMin,numMax,soma1,soma2)
+
+def deletarDaLista():
+    # Deletar um item da lista
+    delLista = ["a","b","c","d","e"]
+    delLista.append("So pra deleta") # adicionei so pra deleta
+    print(delLista)
+    del delLista[-1]  #deleta o index[-1] que eh o ultimo.
+    print(delLista)
+    del delLista[2:]  #deleta do index[2] pra frente
+    print(delLista)
+
+    removeLista = ["um", "dois" , "tres", "quatro", "um"]  #Lista criada para testar o remove
+    print(removeLista)
+    removeLista.remove("um")  #remove o prieiro indeice que achar
+    print(removeLista)
 
 def allListComands():
     print(commLista)
@@ -30,16 +62,20 @@ def allListComands():
     print(commLista[0:2])  # printa do index[0] ate < 2
     print(commLista[1:])   # printa tudo depois de index (pode ser antes tambem)
 
-    # Deletar um item da lista
-    commLista.append("So pra deleta") # adicionei so pra deleta
-    print(commLista)
-    del commLista[-1]  #deleta o index[-1] que eh o ultimo.
-    print(commLista)
+    listacopia = commLista.copy()  # copia as coisas de uma lista pra outra
+    commLista.clear()  # limpa os dados da lista
 
-    removeLista = ["um", "dois" , "tres", "quatro", "um"]  #Lista criada para testar o remove
-    print(removeLista)
-    removeLista.remove("u")  #remove o prieiro indeice que achar
-    print(removeLista)
+    print(commLista)
+    print(listacopia)
+
+    gg  = listacopia.pop(1)   # Pop remove um item da lista, e da de salvar numa variavel o intem salvo
+    print(listacopia)
+    print(gg)
+
+    maisUmaLista = ["um","dois","tres","quatro","cinco","um","dois","um"]
+    print(maisUmaLista.count("um"))     #Couunt serve para ver quanta vezes algo se repete na lista
+    print(maisUmaLista.count("dois"))   #
+
 
 def appednComInput():
     x = 0
@@ -62,5 +98,9 @@ elif escolha == 2:
     imprimeLista()
 elif escolha == 3:
     allListComands()
+elif escolha == 4:
+    deletarDaLista()
+elif escolha == 5:
+    sortedRevers()
 else:
    print("nop")
