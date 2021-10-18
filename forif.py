@@ -37,4 +37,32 @@ def forToString():
         print("nice cock")
         print(mistake, " Mistakes")
 
-forToString()
+def forstyling():
+    for i in range(1,10,2): #Printa de 2 em 2 dos numeros de 1 a 10
+        print(i)
+
+    for i in range(10,1,-1): #Printa os numeros de 10 a 1, de 1 em 1
+        print(i)
+
+    for i in range(1, 10): #Printa os numeros de 1 a 10
+        print(i, end=" ")  #O end serve pra formatar a forma de printa
+    print("")  #so pra dar espaço
+    for i in range(1, 10): #Printa os numeros de 1 a 10
+        print(i, end=" <-> ")  #O end serve pra formatar a forma de printa
+
+def breakcontinue():
+    for i in range(10):
+        if(i == 4):
+            break
+        else:
+            print(i)
+
+interupitor = int(input("-->"))
+if (interupitor==1):
+    fibomath()
+elif(interupitor==2):
+    forToString()
+elif(interupitor==3):
+    forstyling()
+elif(interupitor==4):
+    breakcontinue()

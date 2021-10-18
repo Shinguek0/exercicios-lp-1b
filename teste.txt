@@ -1,0 +1,78 @@
+##  Teste ignorar
+#
+carrosNovos=["Corolla","Compass","Onix","Civic","Kicks","Tiggo","Hilux"]
+semiNovos=["Corsa","Uno","Celta","Crossfox","Logan","Voyage","Fiesta"]
+totalCarros = carrosNovos + semiNovos
+x=0
+
+def addListas():
+    print("Em qual lista voce deseja adicionar algo\n<1> Lista de carros novos <2> Lista de carros seminovos")
+    quest = int(input(""))
+    if (quest==1):
+        carrosNovos.append(input("Digite o que voce deseja adicionar: "))
+        print(carrosNovos)
+    elif(quest==2):
+        semiNovos.append(input("Digite o que voce deseja adicionar: "))
+        print(semiNovos)
+    else:
+        print("numero invalido!!")
+    
+
+def removeLista():
+    print("Em qual lista voce deseja remover algo\n<1> Lista de carros novos <2> Lista de carros seminovos")
+    que = int(input(""))
+    if (que==1):
+        carrosNovos.remove(input("Digite o que voce deseja remover: "))
+        print(carrosNovos)
+    elif(que==2):
+        semiNovos.append(input("Digite o que voce deseja remover: "))
+        print(semiNovos)
+    else:
+        print("numero invalido!!")
+
+def organizarLista():
+    global totalCarros
+    totalCarros=carrosNovos+semiNovos
+    totalCarros.sort()
+    carrosNovos.sort()
+    semiNovos.sort()
+
+def serchLista():
+    print("Em qual lista voce deseja procurar algo\n<1> Lista de carros novos <2> Lista de carros seminovos")
+    src = int(input(""))
+    if (src==1):
+        x = input("Digite o que voce deseja achar: ")
+        if(carrosNovos.count(x) > 0):
+            print(carrosNovos)
+            print("O intem esta na posiçao: ",carrosNovos.index(x))
+    elif(src==2):
+        y = input("Digite o que voce deseja achar: ")
+        if(semiNovos.count(y) > 0):
+            print(semiNovos)
+            print("O intem esta na posiçao: ",semiNovos.index(x))
+    else:
+        print("numero invalido!!")
+
+def imprimirListas():
+    organizarLista()
+    print("Lista de carros novos:",carrosNovos)
+    print("Lista de carros seminovos:",semiNovos)
+    print("Todos os carros:",totalCarros)
+
+while x != 1:
+    print("O que voce deseja:")
+    print("<1> Adicionar um item em uma lista\n<2> Remover um item de uma lista\n<3> Procurar um item nas lista\n<4> Imprimir todas as listas")
+    espec = int(input(""))
+    if (espec == 1):
+        addListas()
+    elif(espec == 2):
+        removeLista()
+    elif(espec == 3):
+        serchLista()
+    elif(espec == 4):
+        imprimirListas()
+    else:
+        print("Nao é uma opção")
+
+    organizarLista()
+    x = int(input("Voce deseja parar o programa:\n<1>sim <2>nao"))

@@ -3,6 +3,7 @@
 ```python
 nome = "Vinicius Albino"
 print("Exercicios de Logica da Programação: ")
+input("bla bla").upper()
 ```
 [Exemplos](https://github.com/Shinguek0/exercicios-lp-1b/blob/main/exemplo.py)<br>
 [1º exercicio](https://github.com/Shinguek0/exercicios-lp-1b/blob/main/exercicio1.py)<br>
