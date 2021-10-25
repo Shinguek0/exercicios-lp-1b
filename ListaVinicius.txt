@@ -1,0 +1,12 @@
+#Faça um programa que use uma estrutura de repetiçao para printar a sequência de Fibonacci
+#Fibonacci é, na matemática, uma sequência em que cada número seguinte corresponde à soma dos dois anteriores.
+#ex: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584...
+
+#Faça um sistema onde o usuario possa apostar em um cavalo, numa competiçao com 5 cavalos
+#ele podera apostar um valor qualquer, e o premio é o quintuplo do valor se o cavalo ganhar.
+#é o triplo e se o cavalo chegar em segundo, e o dobro do valor se ele chegar em terceiro.
+#no final do programa mostre o premio do usuario e a posição em que seu cavalo ficou.
+
+#Faça um sistem de aposta onde o usuario entra com o seu saldo, e ele possa apostar se o numero de uma
+#roleta aleatoria vai cair par ou impar, se ele acertar ele ganha o dobro do que apostou, e se ele errar ele
+#perde a quantia que apostou, o programa deve parar quando o saldo do cara acabar, ou quando ele desejar sair
