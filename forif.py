@@ -16,7 +16,7 @@ def fibomath():
 
 
 def forToString():
-    palavras = ["jorginho","roberto","carlos","yuri","samael","hikyuu","ribamar","fegussan","valeria","attack on titan"]
+    palavras = ["jorginho","roberto","carlos","yuri","samael","hikyuu","ribamar","fergussan","valeria","attack on titan"]
     mistake = 0
     rand = random.randint(0,9)
     palavra = palavras[rand]
